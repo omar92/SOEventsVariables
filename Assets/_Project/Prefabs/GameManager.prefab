@@ -44,3 +44,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bossHealth: {fileID: 11400000, guid: 199e96cc1c6643c49a13282a9f7e014a, type: 2}
+  number: 5

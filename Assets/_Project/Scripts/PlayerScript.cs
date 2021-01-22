@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerScript : MonoBehaviour
 {
-    public BossHealth bossHealth;
+    public FloatSO bossHealth;
     public PlayersSharedData playersData;
     
 

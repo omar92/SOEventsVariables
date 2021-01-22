@@ -5,9 +5,10 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager inistance = null;
-    public BossHealth bossHealth;
+    public FloatSO bossHealth;
+    public Vector2SO playerPos;
 
-    [Range(0,1)]
+    [Range(0, 1)]
     public float number;
     private void Awake()
     {
@@ -23,5 +24,7 @@ public class GameManager : MonoBehaviour
         number = 1;
 
         DontDestroyOnLoad(this);
+        playerPos.value = new Vector2(5, 5);
+
     }
 }

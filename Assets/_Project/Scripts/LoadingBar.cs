@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class LoadingBar : MonoBehaviour
 {
     public Image Progress;
-    public BossHealth bossHealth;
+    public FloatSO value;
 
     void Update()
     {
