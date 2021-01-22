@@ -21,7 +21,6 @@ public class PlayerScript : MonoBehaviour
             bossHealth.value -= .01f;
             HealthChanged.Raise();
         }
-        SceneManager.LoadSceneAsync(1);
     }
 
 }
