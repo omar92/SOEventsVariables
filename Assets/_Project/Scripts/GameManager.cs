@@ -6,7 +6,6 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager inistance = null;
     public FloatSO bossHealth;
-    public Vector2SO playerPos;
 
     [Range(0, 1)]
     public float number;
@@ -24,7 +23,7 @@ public class GameManager : MonoBehaviour
         number = 1;
 
         DontDestroyOnLoad(this);
-        playerPos.value = new Vector2(5, 5);
+        bossHealth.value = 1;
 
     }
 }

@@ -8,8 +8,8 @@ public class LoadingBar : MonoBehaviour
     public Image Progress;
     public FloatSO value;
 
-    void Update()
+    public void UpdateProgress()
     {
-        Progress.fillAmount = GameManager.inistance.number;
+        Progress.fillAmount = value.value;
     }
 }

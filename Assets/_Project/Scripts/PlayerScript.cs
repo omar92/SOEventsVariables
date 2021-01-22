@@ -6,8 +6,7 @@ using UnityEngine.SceneManagement;
 public class PlayerScript : MonoBehaviour
 {
     public FloatSO bossHealth;
-    public PlayersSharedData playersData;
-    
+    public EventSO HealthChanged;
 
     private void Start()
     {
@@ -16,13 +15,13 @@ public class PlayerScript : MonoBehaviour
 
     IEnumerator AttackBoss()
     {
-        while (GameManager.inistance.number>.5f)
+        while (bossHealth.value > .5f)
         {
-            yield return new WaitForSeconds(1);
-            GameManager.inistance.number -= .1f;
+            yield return new WaitForSeconds(.1f);
+            bossHealth.value -= .01f;
+            HealthChanged.Raise();
         }
         SceneManager.LoadSceneAsync(1);
-
     }
 
 }

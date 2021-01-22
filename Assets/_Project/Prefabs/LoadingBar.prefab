@@ -87,6 +87,7 @@ GameObject:
   - component: {fileID: 8795634860502202301}
   - component: {fileID: 8795634860502202300}
   - component: {fileID: 8795634860502202299}
+  - component: {fileID: 8386024876041687295}
   m_Layer: 5
   m_Name: LoadingBar
   m_TagString: Untagged
@@ -166,3 +167,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Progress: {fileID: 8795634859517816909}
   value: {fileID: 11400000, guid: 199e96cc1c6643c49a13282a9f7e014a, type: 2}
+--- !u!114 &8386024876041687295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8795634860502202297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38f0f773973a24d47a27d0d0869d2996, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventSo: {fileID: 11400000, guid: 668961820a30fde4e8f007bce750f67e, type: 2}
+  OnRaise:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8795634860502202299}
+        m_TargetAssemblyTypeName: LoadingBar, Assembly-CSharp
+        m_MethodName: UpdateProgress
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
